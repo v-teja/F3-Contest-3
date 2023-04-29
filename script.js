@@ -1,6 +1,6 @@
-window.addEventListener('beforeunload', () => {
-    sessionStorage.clear();
-});
+// window.addEventListener('beforeunload', () => {
+//     sessionStorage.clear();
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById('signup-form');
