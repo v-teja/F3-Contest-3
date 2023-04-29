@@ -1,0 +1,48 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: darkgray; */
+    padding-top: 2%;
+    margin-bottom: 10px;
+}
+
+span, a{
+    padding:0.8vw;
+    border-radius: 5px;
+}
+span:hover, a:hover{
+    background-color: rgb(31, 31, 31);
+}
+
+.my-div{
+    padding-top: 5vh;
+}
+
+input::placeholder {
+    color: #abaaaa !important;
+  }
+  
+  input.form-control {
+    border: none;
+    border-bottom: 1px solid rgb(168, 167, 167) !important;
+    border-radius: 0;
+  }
+
+  .btn{
+    background-color: white !important;
+  }
+
+  .btn:hover{
+    color: black !important;
+    background-color: rgb(203, 203, 203) !important;
+  }
+
+  #error-message{
+    color: red;
+  }
+
+  #success-message{
+    color: green;
+  }
+  
+
