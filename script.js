@@ -91,7 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // const user2 = sessionStorage.getItem(tempToken);
         // console.log(user2);
         //redirect to profile page
-        window.location.replace('/F3-Contest-3/profile.html');
+        setTimeout(function() {
+            window.location.replace('/F3-Contest-3/profile.html');
+          }, 3000);
 
     });
 });
