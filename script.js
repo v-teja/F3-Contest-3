@@ -11,10 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
     profile.addEventListener("click", () => {
         // Check if user is already logged in
         if (sessionStorage.getItem('accessToken')) {
-            window.location.replace('/profile.html');
+            window.location.replace('/F3-Contest-3/profile.html');
+
             return;
         } else {
-            window.location.replace('/index.html');
+            window.location.replace('/F3-Contest-3/index.html');
+
         }
     });
 
@@ -23,10 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     signup.addEventListener("click", () => {
         // Check if user is already logged in
         if (sessionStorage.getItem('accessToken')) {
-            window.location.replace('/profile.html');
+            window.location.replace('/F3-Contest-3/profile.html');
+
             return;
         } else {
-            window.location.replace('/index.html');
+            window.location.replace('/F3-Contest-3/index.html');
+
         }
     });
 
@@ -34,7 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
 
         if (sessionStorage.getItem('accessToken')) {
-            window.location.replace('/profile.html');
+            window.location.replace('/F3-Contest-3/profile.html');
+
             return;
         }
 
@@ -88,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const user2 = sessionStorage.getItem(tempToken);
         // console.log(user2);
         //redirect to profile page
-         window.location.href = "./profile.html"
+        window.location.replace('/F3-Contest-3/profile.html');
+
     });
 });
