@@ -1,5 +1,5 @@
 window.addEventListener('beforeunload', () => {
-    localStorage.clear();
+    sessionStorage.clear();
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Check if user is already logged in
         if (sessionStorage.getItem('accessToken')) {
             window.location.replace('/F3-Contest-3/profile.html');
-
             return;
         } else {
             window.location.replace('/F3-Contest-3/index.html');
@@ -39,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (sessionStorage.getItem('accessToken')) {
             window.location.replace('/F3-Contest-3/profile.html');
-
             return;
         }
 
@@ -88,9 +86,9 @@ document.addEventListener("DOMContentLoaded", () => {
         
         successMessage.textContent = "Successfully Signed Up!"
 
-        const tempToken = sessionStorage.getItem('accessToken');
+        // const tempToken = sessionStorage.getItem('accessToken');
 
-        const user2 = sessionStorage.getItem(tempToken);
+        // const user2 = sessionStorage.getItem(tempToken);
         // console.log(user2);
         //redirect to profile page
         window.location.replace('/F3-Contest-3/profile.html');

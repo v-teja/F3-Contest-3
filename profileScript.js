@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>Password: ${'X'.repeat(user['Password'].length - 2) + user['Password'].substring(user['Password'].length - 2)}</p>
       `;
     } else {
-        window.location.replace('/index.html');
+        window.location.replace('/F3-Contest-3/index.html');
     }
 
     const logoutButton = document.getElementById('logout-btn');
